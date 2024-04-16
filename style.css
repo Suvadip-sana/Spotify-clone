@@ -10,8 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #000;
     color: #fff;
-    overflow: hidden;
-    /*Hide the scroll bar*/
+    overflow: hidden; /*Hide the scroll bar*/
 }
 
 .main {
@@ -25,16 +24,13 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: #333;
-    /* border-radius: 0.2rem; */
 }
 
 /* Side bar */
 .side-bar {
     background-color: #000;
     width: 355px;
-    /* width: 25vw; */
     border-radius: 0.5rem;
-    /*1rem = 16px*/
     height: 88.3%;
 }
 
@@ -124,7 +120,6 @@ a {
 .box-p1 {
     font-size: 1rem;
     font-weight: 600;
-    /* margin-top: -0.05rem; */
 }
 
 .box-p2 {
@@ -146,9 +141,7 @@ a {
 /*  Main section */
 .main-content {
     background-color: #121212;
-    /* background: linear-gradient(180deg, #232323, #121212); */
     flex: 1;
-    /* Except all other component rest of the blank space give it to this div*/
     height: 87.5%;
     border-radius: 0.5rem;
     overflow: auto;
@@ -157,24 +150,12 @@ a {
     padding: 0 0.7rem 0 0.7rem;
 }
 
-/* .main-content::-webkit-scrollbar{
-    width: 0.8rem;
-}
-
-.main-content::-webkit-scrollbar-thumb{
-    background-color: #333;
-    border-radius: 0.2rem;
-} */
-
 /*  Nav bar section */
 .sticky-nav-pro {
     position: sticky;
     top: 0;
     background-color: #121212;
-    /* background: linear-gradient(#1a1a1a, #121212); */
     z-index: 10;
-    /* width: 100%; */
-    /* margin: 0; */
 }
 
 .sticky-nav {
@@ -271,7 +252,6 @@ a {
 
 .card {
     width: 162px;
-    /* width: 14.29%; */
     height: fit-content;
     border-radius: 0.5rem;
     padding: 0.85rem;
@@ -339,7 +319,6 @@ a {
 
 .album {
     width: 25%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
 }
@@ -378,9 +357,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-weight: 900; */
     opacity: 0.6;
-    /* transition: all 0.2s; */
 }
 
 .cursor:hover {
@@ -394,7 +371,6 @@ a {
 
 .player {
     width: 40%;
-    /* background-color: green; */
 }
 
 .controls {
@@ -456,7 +432,6 @@ a {
 
 .hw-controls {
     width: 25%;
-    /* background-color: blue; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -468,9 +443,7 @@ a {
 
 .hw-controls .control3 {
     height: 1.3rem;
-    /* margin-right: 0.2rem; */
     opacity: 0.6;
-    /* font-size: 2.5rem; */
 }
 
 .hw-controls .control4 {
@@ -537,7 +510,6 @@ a {
 }
 
 .hr hr {
-    /* height: -10px; */
     opacity: 0.3;
     width: 97%;
 }
@@ -567,8 +539,6 @@ a {
     justify-content: center;
 }
 
-
-
 @media(max-width: 1024px) {
     .hide {
         display: none;
@@ -587,13 +557,8 @@ a {
     }
 
     .cards-container {
-        /* display: flex; */
         overflow-x: auto;
-        /* overflow-y:hidden; */
-        /* width: 150%; */
-        /* display: inline-block; */
         flex-wrap: nowrap;
-        /* white-space: nowrap; */
     }
 
     .cards-container::-webkit-scrollbar {
@@ -609,9 +574,7 @@ a {
     }
 }
 
-/* Example CSS adjustments for mobile screens */
 @media screen and (max-width: 768px) {
-    /* Adjustments for smaller screens */
 
     .hide2 {
         display: none;
@@ -619,17 +582,14 @@ a {
 
     .card {
         width: 80%;
-        /* Adjust card width for better fit */
         max-width: 262px;
         margin: 0 auto 10px;
-        /* Center cards and add bottom margin */
     }
 
     .center {
         text-align: center;
     }
 
-    /* Adjust font sizes for better readability */
     .card-heading {
         font-size: 1.5em;
     }
@@ -648,9 +608,7 @@ a {
         font-size: 0.8rem;
     }
 
-    /* Adjust spacing and font sizes for footer */
     .footer {
-        /* padding: 20px; */
         text-align: center;
         font-size: 0.8em;
     }
@@ -666,10 +624,8 @@ a {
 
     ::-webkit-scrollbar-thumb {
         background-color: #333;
-        /* border-radius: 0.2rem; */
     }
 
-    /* Adjust styles for sticky navigation */
     .sticky-nav-pro {
         position: sticky;
         top: 0;
@@ -695,7 +651,6 @@ a {
         color: black;
     }
 
-    /* Adjust styles for scrollbar */
     .cards-container::-webkit-scrollbar {
         height: 2px;
     }
@@ -717,27 +672,16 @@ a {
     }
 
     .music-player .album {
-        /* margin-right: 65%; */
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* position: absolute; */
         width: 100%;
-        /* margin-right: 15%;
-        margin-left: 10%; */
         margin-top: 0.6rem;
     }
 
     .music-player .album {
         margin-right: 1rem;
     }
-
-    /* .music-player .album .pause2{
-        position: relative;
-        left: 180%;
-        margin-right: 1.5rem;
-
-    } */
 
     .music-player .player {
         width: 100%;
@@ -776,9 +720,6 @@ a {
 
     }
 
-    /* .left-part .hero2{
-        margin-left: 1.5rem;
-    } */
 
     .left-part .hero i {
         font-size: 1.2rem;
@@ -786,7 +727,6 @@ a {
 
     .pause2 {
         display: block;
-        /* margin-right: -10%; */
         margin-left: 6rem;
     }
 
