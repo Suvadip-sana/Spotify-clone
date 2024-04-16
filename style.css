@@ -1,0 +1,793 @@
+:root {
+    --a: 0;
+    --translate: 0;
+    --overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    /*Hide the scroll bar*/
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    /* border-radius: 0.2rem; */
+}
+
+/* Side bar */
+.side-bar {
+    background-color: #000;
+    width: 355px;
+    /* width: 25vw; */
+    border-radius: 0.5rem;
+    /*1rem = 16px*/
+    height: 88.3%;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-option {
+    line-height: 2.9rem;
+    opacity: 0.6;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0.9rem;
+}
+
+.library {
+    background-color: #121212;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+    height: 80.2%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+}
+
+.lib-option img {
+    height: 1.25rem;
+}
+
+.icons {
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.icons i {
+    margin-left: 1.5rem;
+    opacity: 0.6;
+}
+
+/* Pointer Class */
+.pointer {
+    cursor: pointer;
+}
+
+/* Transition Class */
+.transition {
+    transition: all 0.3s;
+}
+
+/* Hover Class */
+.hover:hover {
+    opacity: 1;
+}
+
+.box {
+    background-color: #232323;
+    height: fit-content;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem 1.4rem 0.5rem;
+    padding: 0.1rem 1.3rem 1.2rem 1.3rem;
+
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+    /* margin-top: -0.05rem; */
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    width: fit-content;
+    margin-top: 0.6rem;
+}
+
+/*  Main section */
+.main-content {
+    background-color: #121212;
+    /* background: linear-gradient(180deg, #232323, #121212); */
+    flex: 1;
+    /* Except all other component rest of the blank space give it to this div*/
+    height: 87.5%;
+    border-radius: 0.5rem;
+    overflow: auto;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0 0.7rem 0 0.7rem;
+}
+
+/* .main-content::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+.main-content::-webkit-scrollbar-thumb{
+    background-color: #333;
+    border-radius: 0.2rem;
+} */
+
+/*  Nav bar section */
+.sticky-nav-pro {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    /* background: linear-gradient(#1a1a1a, #121212); */
+    z-index: 10;
+    /* width: 100%; */
+    /* margin: 0; */
+}
+
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.75rem 1rem;
+}
+
+.left-part img {
+    height: 1.2rem;
+    width: 1.2rem;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+}
+
+.right-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.margin {
+    margin-left: 0.5rem;
+}
+
+.badge i {
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
+
+.badge2 {
+    background-color: #000;
+    color: #fff;
+}
+
+.bell {
+    font-size: 1.25rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    margin-top: 0.6rem;
+}
+
+.user {
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.6rem;
+
+}
+
+.user img {
+    height: 1.6rem;
+}
+
+.sticky-nav-boottom {
+    padding: 0 0 0.9rem 1rem;
+}
+
+.sticky-nav-boottom button {
+    margin-right: 0.3rem;
+}
+
+.badge3 {
+    background-color: #232323;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.badge3:hover {
+    background-color: #2d2c2c;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-heading {
+    margin: 0.6rem 0 0.4rem 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.card {
+    width: 162px;
+    /* width: 14.29%; */
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.85rem;
+    transition: all 0.4s;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.play {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #1fdf64;
+    color: black;
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 1.5rem;
+    opacity: var(--a);
+    transition: all 0.2s ease-out;
+    transform: translateY(var(--translate));
+}
+
+.card:hover {
+    background-color: #1a1a1a;
+    --a: 1;
+    --translate: -0.7rem;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    background-size: cover;
+}
+
+.card-title {
+    font-weight: 600;
+    margin: 0.3rem 0 0 0;
+}
+
+.card-info {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.music-player {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+
+.album .album-img {
+    height: 3.5rem;
+    margin-left: 1rem;
+}
+
+.description {
+    margin-left: 1rem;
+    line-height: 0.3rem;
+}
+
+.description .description1 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.description .description2 {
+    font-size: 0.7rem;
+    opacity: 0.6;
+    white-space: nowrap;
+}
+
+.plush {
+    margin-left: 1rem;
+    border: 2px solid white;
+    height: 0.8rem;
+    width: 0.8rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-weight: 900; */
+    opacity: 0.6;
+    /* transition: all 0.2s; */
+}
+
+.cursor:hover {
+    opacity: 1;
+}
+
+.time {
+    transition: all 0.2s;
+}
+
+
+.player {
+    width: 40%;
+    /* background-color: green; */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+.player .controls img {
+    width: 0.85rem;
+    margin: 0 0.8rem 0 0.8rem;
+    opacity: 0.6;
+    transition: all 0.2s;
+}
+
+.player .controls img:hover {
+    opacity: 1;
+}
+
+.player .controls .pause {
+    width: 2rem;
+    opacity: 1;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.progress-bar .play-bar {
+    appearance: none;
+    width: 82.5%;
+    height: 0.25rem;
+    background-color: #3e3e3e;
+    border-radius: 50rem;
+    margin: 0 0.5rem 0 0.5rem;
+    overflow: var(--overflow);
+}
+
+.progress-bar .play-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    height: 0.25rem;
+    width: 0.25rem;
+    border: 2px solid rgb(5, 125, 5);
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: -403px 0 0 400px #1fdf64;
+    transition: left 5s;
+}
+
+.current-time {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.hw-controls {
+    width: 25%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.hw-controls img {
+    height: 2.5rem;
+}
+
+.hw-controls .control3 {
+    height: 1.3rem;
+    /* margin-right: 0.2rem; */
+    opacity: 0.6;
+    /* font-size: 2.5rem; */
+}
+
+.hw-controls .control4 {
+    height: 1rem;
+    opacity: 0.6;
+}
+
+.hw-controls .volume {
+    appearance: none;
+    height: 0.25rem;
+    background-color: #3e3e3e;
+    border-radius: 50rem;
+    overflow: var(--overflow);
+    margin-left: -0.3rem;
+    width: 5.9rem;
+}
+
+.hw-controls .volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    height: 0.25rem;
+    width: 0.25rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: -103px 0 0 100px #fff;
+    transition: left 5s;
+}
+
+.hw-controls .full-screen i {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    opacity: 0.6;
+}
+
+.scale:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    height: 27.5rem;
+}
+
+.social-media {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #2d2c2c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.social:hover {
+    background-color: #515151;
+}
+
+.hr hr {
+    /* height: -10px; */
+    opacity: 0.3;
+    width: 97%;
+}
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4rem;
+    font-size: 0.8rem;
+    opacity: 0.4;
+}
+
+.copy-right span {
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.hide3 {
+    display: none;
+}
+
+.album2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media(max-width: 1024px) {
+    .hide {
+        display: none;
+    }
+
+    .side-bar {
+        width: 90px;
+    }
+
+    .option {
+        flex-direction: column;
+    }
+
+    .option .icons .fa-plus {
+        margin: 1rem;
+    }
+
+    .cards-container {
+        /* display: flex; */
+        overflow-x: auto;
+        /* overflow-y:hidden; */
+        /* width: 150%; */
+        /* display: inline-block; */
+        flex-wrap: nowrap;
+        /* white-space: nowrap; */
+    }
+
+    .cards-container::-webkit-scrollbar {
+        height: 0.4rem;
+    }
+
+    .cards-container::-webkit-scrollbar-thumb {
+        background-color: #1a1a1a;
+    }
+
+    .card {
+        min-width: 162px;
+    }
+}
+
+/* Example CSS adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    .hide2 {
+        display: none;
+    }
+
+    .card {
+        width: 80%;
+        /* Adjust card width for better fit */
+        max-width: 262px;
+        margin: 0 auto 10px;
+        /* Center cards and add bottom margin */
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    /* Adjust font sizes for better readability */
+    .card-heading {
+        font-size: 1.5em;
+    }
+
+    .card .card-title,
+    .card-info {
+        font-size: 0.9em;
+    }
+
+    .right-part .badge2 {
+        font-size: 0.6rem;
+        padding: 0.7rem;
+    }
+
+    .right-part i {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust spacing and font sizes for footer */
+    .footer {
+        /* padding: 20px; */
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .main-content {
+        margin-left: 0.5rem;
+        margin-top: 0;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0.2rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #333;
+        /* border-radius: 0.2rem; */
+    }
+
+    /* Adjust styles for sticky navigation */
+    .sticky-nav-pro {
+        position: sticky;
+        top: 0;
+        padding-top: 0;
+    }
+
+    .sticky-nav {
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+
+    .sticky-nav-boottom {
+        margin-top: -10px;
+    }
+
+    .sticky-nav-boottom .badge3 {
+        font-size: 0.7rem;
+        padding: 0.7rem;
+    }
+
+    .sticky-nav-boottom .all {
+        background-color: #fff;
+        color: black;
+    }
+
+    /* Adjust styles for scrollbar */
+    .cards-container::-webkit-scrollbar {
+        height: 2px;
+    }
+
+    .cards-container::-webkit-scrollbar-thumb {
+        background-color: #333;
+    }
+
+    .footer .hr {
+        width: 100%;
+    }
+
+    .visible {
+        display: inline-block;
+    }
+
+    .music-player {
+        flex-direction: column;
+    }
+
+    .music-player .album {
+        /* margin-right: 65%; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* position: absolute; */
+        width: 100%;
+        /* margin-right: 15%;
+        margin-left: 10%; */
+        margin-top: 0.6rem;
+    }
+
+    .music-player .album {
+        margin-right: 1rem;
+    }
+
+    /* .music-player .album .pause2{
+        position: relative;
+        left: 180%;
+        margin-right: 1.5rem;
+
+    } */
+
+    .music-player .player {
+        width: 100%;
+        margin-top: -205px;
+    }
+
+    .progress-bar .play-bar {
+        height: 0.1rem;
+    }
+
+    .album .album-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .album .description p {
+        font-size: 0.7rem;
+    }
+
+    .album .description1 {
+        width: fit-content;
+        white-space: nowrap;
+    }
+
+    .left-part .hero {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        height: 2rem;
+        width: 2rem;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 0.2rem;
+
+    }
+
+    /* .left-part .hero2{
+        margin-left: 1.5rem;
+    } */
+
+    .left-part .hero i {
+        font-size: 1.2rem;
+    }
+
+    .pause2 {
+        display: block;
+        /* margin-right: -10%; */
+        margin-left: 6rem;
+    }
+
+}
